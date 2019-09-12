@@ -42,7 +42,7 @@ end
 
 
 
-
+=begin
 
 
 
@@ -72,3 +72,6 @@ def reduce(s, sp=nil)
   end
   accum
 end
+
+
+=end
