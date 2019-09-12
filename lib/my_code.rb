@@ -19,14 +19,14 @@ def reduce(start_array, array_total = nil )
     new_total = array_total
     i = 0
   else
-    new_total = s[0]
+    new_total = start_array[0]
     i = 1
   end
   while i < s.length
-    new_total = yield(accum, s[i])
+    new_total = yield(new_total, start_array[i])
     i += 1
   end
-  accum
+  new_total
 end 
 
 
