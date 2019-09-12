@@ -12,13 +12,14 @@ def map(start_array)
 end 
 
 
+
+
 def reduce(start_array)
   i = 0 
   while i < start_array.length do
     return false if !start_array[i]
     i += 1 
   end
-  
   return true
 end 
 
