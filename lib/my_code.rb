@@ -1,6 +1,8 @@
 # Your Code Here
 
-def 
+def map(start_array)
+  yield 
+end 
 
 
 
