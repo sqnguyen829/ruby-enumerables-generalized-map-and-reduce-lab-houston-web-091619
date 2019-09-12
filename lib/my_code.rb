@@ -13,7 +13,7 @@ end
 
 
 
-
+=beg
 def reduce(start_array, array_total=nil )
   if array_total
     new_total = array_total
@@ -22,13 +22,14 @@ def reduce(start_array, array_total=nil )
     new_total = start_array[0]
     i = 1
   end
-  while i < s.length
+  while i < start_array.length
     new_total = yield(new_total, start_array[i])
     i += 1
   end
   new_total
 end 
 
+=begin
 def reduce(s, sp=nil)
   if sp
     accum = sp
@@ -44,7 +45,7 @@ def reduce(s, sp=nil)
   accum
 end
 
-
+=end
 
 
 
