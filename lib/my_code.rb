@@ -4,10 +4,11 @@ def map(start_array)
   new_array=[]
   i=0 
   while i < start_array.length do
-    yield
+    #new_array << start_array[i] * 2 
+    new_array << yield (start_array[i] )
     i += 1 
   end
-  return new_array
+  new_array
 end 
 
 
