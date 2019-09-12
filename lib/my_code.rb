@@ -4,11 +4,12 @@ def map(start_array)
   new_array=[]
   i=0 
   while i < start_array.length do
-    
+    yield
     i += 1 
   end
   return new_array
 end 
+
 
 
 
