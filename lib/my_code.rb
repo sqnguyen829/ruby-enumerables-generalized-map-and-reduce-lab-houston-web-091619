@@ -5,7 +5,7 @@ def map(start_array)
   i=0 
   while i < start_array.length do
     #new_array << start_array[i] * 2 
-    new_array << yield (start_array[i] )
+    new_array << (yield (start_array[i] ))
     i += 1 
   end
   new_array
