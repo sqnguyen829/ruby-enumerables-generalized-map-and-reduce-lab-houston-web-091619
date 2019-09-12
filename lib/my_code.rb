@@ -13,7 +13,6 @@ end
 
 
 
-=beg
 def reduce(start_array, array_total=nil )
   if array_total
     new_total = array_total
