@@ -18,6 +18,7 @@ def reduce(start_array)
     return false if !start_array[i]
     i += 1 
   end
+  
   return true
 end 
 
