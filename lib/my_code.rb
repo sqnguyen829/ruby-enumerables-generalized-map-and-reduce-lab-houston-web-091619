@@ -14,97 +14,20 @@ end
 
 
 def reduce(start_array, array_total=nil )
+  
   if array_total
     new_total = array_total
     i = 0
+    
   else
     new_total = start_array[0]
     i = 1
   end
+  
   while i < start_array.length
     new_total = yield(new_total, start_array[i])
     i += 1
   end
+  
   new_total
 end 
-
-=begin
-def reduce(s, sp=nil)
-  if sp
-    accum = sp
-    i = 0
-  else
-    accum = s[0]
-    i = 1
-  end
-  while i < s.length
-    accum = yield(accum, s[i])
-    i += 1
-  end
-  accum
-end
-
-=end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=begin
-
-
-
-# Your Code Here
-
-def map(s)
-  new = []
-  i = 0
-  while i < s.length
-    new.push(yield(s[i]))
-    i += 1
-  end
-  new
-end
-
-def reduce(s, sp=nil)
-  if sp
-    accum = sp
-    i = 0
-  else
-    accum = s[0]
-    i = 1
-  end
-  while i < s.length
-    accum = yield(accum, s[i])
-    i += 1
-  end
-  accum
-end
-
-
-=end
