@@ -16,14 +16,14 @@ end
 
 def reduce(start_array, array_total = nil )
   if array_total
-    accum = array_total
+    new_total = array_total
     i = 0
   else
-    accum = s[0]
+    new_total = s[0]
     i = 1
   end
   while i < s.length
-    accum = yield(accum, s[i])
+    new_total = yield(accum, s[i])
     i += 1
   end
   accum
