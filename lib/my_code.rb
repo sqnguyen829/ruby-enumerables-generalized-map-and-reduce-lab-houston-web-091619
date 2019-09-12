@@ -12,6 +12,12 @@ def map(start_array)
 end 
 
 
+def reduce(start_array)
+  new_array = []
+  i = 0 
+  
+end 
+
 
 
 
