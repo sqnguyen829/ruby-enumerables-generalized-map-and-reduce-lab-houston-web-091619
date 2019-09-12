@@ -19,7 +19,7 @@ def reduce(start_array, array_total = nil )
     new_total = array_total
     i = 0
   else
-    new_total = start_total[0]
+    new_total = array_total[0]
     i = 1
   end
   while i < s.length
